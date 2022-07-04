@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.heroSection{
+    background-image: url("../images/bg.png");
+    background-size: cover;
+}
+
+.mobnav{
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:480px)  {
+    .pcNav{
+        display: none  !important;
+    }
+    .mainHeader{
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+    .mainButton_header{
+        flex-direction: column;
+    } .mobnav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        display: block;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px)  {
+    .pcNav{
+        display: none  !important;
+    }
+    .mainHeader{
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+    .mainButton_header{
+        flex-direction: column;
+    } .mobnav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        display: flex;
+    }
+}
